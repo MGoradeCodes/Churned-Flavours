@@ -1,0 +1,94 @@
+#Logo{
+    border: 2px solid black;
+    border-radius: 101%;
+    width: 67px;
+    height: 67px;
+    display: inline-block;
+
+}
+
+#NavigationBar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#NavigationBar > * {
+    margin-right: 35px;
+    color: black; 
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#NavigationBar > *:not(#searchbar, #branchselect):hover {
+    color: lightgrey;
+}
+
+#searchbar{
+    margin-left: 15px;
+    width: 90%;
+    height: 30px;
+
+}
+
+#Dropdown{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    left: 70vw;
+    bottom: 13vw;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    height: 375px;
+    overflow-y: auto;
+    width: 290px;
+
+    
+}
+
+#branchselect{
+    margin-left: 30%;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #b6cee7;
+    border: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#menu{
+    display: none;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.options{
+    margin-top: 10px;
+    width: 100%;
+    padding-right: 200px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+
+}
+
+#location{
+    font-size: 15px;
+}
+
+.options:hover{
+    background-color: whitesmoke;
+}
