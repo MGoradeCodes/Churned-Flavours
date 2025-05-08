@@ -63,8 +63,15 @@
     box-sizing: border-box;
 }
 
-body{
+html, body{
     background-color: whitesmoke;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+        
 }
 
 #menu{
@@ -91,4 +98,70 @@ body{
 
 .options:hover{
     background-color: whitesmoke;
+}
+
+#MainDiv{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#commonimage{
+    height: 240px;
+    width: 240px;
+    border-radius: 20px;
+    display: block;
+}
+
+#reservediv{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn{
+    width: 150px;
+    height: 40px;
+    margin-left: 43px;
+    border-radius: 10px;
+    background-color: white;
+    color:  black;
+}
+
+.btn:hover{
+    background-color:  green;
+    color: white;
+}
+
+#cateringdiv{
+    position: absolute;
+    bottom: 50px;
+    left: 350px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1{
+    text-align: center;
+}
+
+#deliverydiv{
+    position: absolute;
+    bottom: 50px;
+    left: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+#coupondiv{
+    position: absolute;
+    bottom: 50px;
+    left: 950px;
+    display: flex;
+    flex-direction: column;
 }
